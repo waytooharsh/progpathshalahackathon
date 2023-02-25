@@ -18,24 +18,9 @@ function Listpop(props) {
     setOpen(false);
   };
   const onReady = (event) => {
-    // access to player in all event handlers via event.target
     event.target.pauseVideo();
   };
   {
-    /*
-  const style = {
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      bgcolor: "#2b2b2b",
-      color: "white",
-      boxShadow: 24,
-      pt: 2,
-      px: 4,
-      pb: 3,
-    };
-*/
   }
 
   return (
@@ -45,7 +30,6 @@ function Listpop(props) {
         const pname = asana.title;
         return (
           <ListGroup.Item>
-            {/*<Button onClick={handleyt}>{pname}</Button>*/}
             <Accordion open={open} onClose={handleClose}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -58,7 +42,6 @@ function Listpop(props) {
               </AccordionSummary>
               <AccordionDetails>
                 <Box sx={{ width: "max-content", margin: "auto" }}>
-                  {/*<h2 id="child-modal-title">{pname}</h2>*/}
                   <YouTube videoId={pid} onReady={onReady} />
                 </Box>
               </AccordionDetails>
