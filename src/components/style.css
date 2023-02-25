@@ -1,0 +1,25 @@
+.nav {
+  background-color: #2b2b2b !important;
+  display: block;
+  position: relative;
+  margin: 0 auto 1rem auto;
+}
+.branding {
+  margin: 0.4rem auto !important;
+}
+.mainpane {
+  display: block;
+  position: absolute;
+  width: 90%;
+  margin: 0.4rem 5% !important;
+}
+.slides {
+  height: 10rem;
+}
+.ss {
+  margin: 4rem auto !important;
+}
+.carocaption {
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
